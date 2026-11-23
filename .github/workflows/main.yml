@@ -24,11 +24,11 @@ jobs:
         gradle-version: '8.7'
 
     - name: Build with Gradle
-      working-directory: ./اسم_المجلد_هنا
+      working-directory: ./dera3-digital-shield (6).zip
       run: gradle assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Dera3-App-APK
-        path: اسم_المجلد_هنا/app/build/outputs/apk/debug/app-debug.apk
+        path: dera3-digital-shield (6).zip /app/build/outputs/apk/debug/app-debug.apk
