@@ -24,10 +24,11 @@ jobs:
         gradle-version: '8.7'
 
     - name: Build with Gradle
+      working-directory: ./اسم_المجلد_هنا
       run: gradle assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Dera3-App-APK
-        path: app/build/outputs/apk/debug/app-debug.apk
+        path: اسم_المجلد_هنا/app/build/outputs/apk/debug/app-debug.apk
